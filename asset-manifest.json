@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jamesbdl/static/css/main.44afa508.css",
-    "main.js": "/jamesbdl/static/js/main.008a618a.js",
-    "static/js/787.a11f24eb.chunk.js": "/jamesbdl/static/js/787.a11f24eb.chunk.js",
-    "static/media/GPU.png": "/jamesbdl/static/media/GPU.f1e56d3165b2a50f33d4.png",
-    "static/media/me.jpg": "/jamesbdl/static/media/me.6ff206e951cd4b1056e7.jpg",
-    "static/media/RCToyCar.jpg": "/jamesbdl/static/media/RCToyCar.2cebaa8da32bb672a836.jpg",
-    "index.html": "/jamesbdl/index.html",
-    "main.44afa508.css.map": "/jamesbdl/static/css/main.44afa508.css.map",
-    "main.008a618a.js.map": "/jamesbdl/static/js/main.008a618a.js.map",
-    "787.a11f24eb.chunk.js.map": "/jamesbdl/static/js/787.a11f24eb.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.44afa508.css",
+    "main.js": "/portfolio/static/js/main.7a8e6d9f.js",
+    "static/js/787.a11f24eb.chunk.js": "/portfolio/static/js/787.a11f24eb.chunk.js",
+    "static/media/GPU.png": "/portfolio/static/media/GPU.f1e56d3165b2a50f33d4.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.6ff206e951cd4b1056e7.jpg",
+    "static/media/RCToyCar.jpg": "/portfolio/static/media/RCToyCar.2cebaa8da32bb672a836.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.44afa508.css.map": "/portfolio/static/css/main.44afa508.css.map",
+    "main.7a8e6d9f.js.map": "/portfolio/static/js/main.7a8e6d9f.js.map",
+    "787.a11f24eb.chunk.js.map": "/portfolio/static/js/787.a11f24eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44afa508.css",
-    "static/js/main.008a618a.js"
+    "static/js/main.7a8e6d9f.js"
   ]
 }
