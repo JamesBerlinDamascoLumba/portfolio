@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/jamesbdl/static/css/main.44afa508.css",
+    "main.js": "/jamesbdl/static/js/main.008a618a.js",
+    "static/js/787.a11f24eb.chunk.js": "/jamesbdl/static/js/787.a11f24eb.chunk.js",
+    "static/media/GPU.png": "/jamesbdl/static/media/GPU.f1e56d3165b2a50f33d4.png",
+    "static/media/me.jpg": "/jamesbdl/static/media/me.6ff206e951cd4b1056e7.jpg",
+    "static/media/RCToyCar.jpg": "/jamesbdl/static/media/RCToyCar.2cebaa8da32bb672a836.jpg",
+    "index.html": "/jamesbdl/index.html",
+    "main.44afa508.css.map": "/jamesbdl/static/css/main.44afa508.css.map",
+    "main.008a618a.js.map": "/jamesbdl/static/js/main.008a618a.js.map",
+    "787.a11f24eb.chunk.js.map": "/jamesbdl/static/js/787.a11f24eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44afa508.css",
+    "static/js/main.008a618a.js"
+  ]
+}
