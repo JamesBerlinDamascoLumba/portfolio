@@ -3,11 +3,117 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: #23232e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+
+
+
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+p, button, a, span, figcaption {
+  font-size: 1rem;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+@media screen and (max-width: 1000px), (max-height: 800px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  h6 {
+    font-size: 0.5rem;
+  }
+  p, button, a, span, figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+  h5 {
+    font-size: 0.6rem;
+  }
+  h6 {
+    font-size: 0.5rem;
+  }
+  p, button, a, span, figcaption {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+  h1 {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.6rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h6 {
+    font-size: 0.4rem;
+  }
+  p, button, a, span, figcaption {
+    font-size: 0.6rem;
+  }
 }

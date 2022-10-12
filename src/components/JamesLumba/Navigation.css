@@ -1,0 +1,242 @@
+#Navigation-bar.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 0;
+    overflow: hidden;
+    animation-name: navigation-bar__entrance;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes navigation-bar__entrance {
+    from {height: 0;}
+    to {height: calc(90vh - 300px);}
+}
+
+
+
+/* Navigation Buttons */
+#Nav__Button1, #Nav__Button2, #Nav__Button3, #Nav__Button4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #89898d;
+    margin: 0;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px;
+    position: relative;
+    right: 300px;
+    animation-name: nav__buttons-entrance;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes nav__buttons-entrance {
+    from {right: 300px;}
+    to {right: 0;}
+}
+#Nav__Button1 {
+    animation-delay: 1.4s;
+}
+#Nav__Button2 {
+    animation-delay: 1.6s;
+}
+#Nav__Button3 {
+    animation-delay: 1.8s;
+}
+#Nav__Button4 {
+    animation-delay: 2s;
+}
+#Nav__Button1:hover, #Nav__Button2:hover, #Nav__Button3:hover, #Nav__Button4:hover {
+    color: #44c97f;
+    cursor: pointer;
+}
+.Nav__Buttons-icon {
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+}
+.Nav__Button-active {
+    color: #44c97f !important;
+    background-color: #182626;
+}
+
+/* Navigation Footer */
+#Navigation-bar .Footer {
+    padding-bottom: 25px;
+}
+
+
+
+#Navigation-bar .Footer div,
+#Navigation-bar .Footer .Text-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #89898d;
+    text-align: center;
+}
+#Navigation-bar .Footer .Icon-link {
+    color: #89898d;
+}
+#Navigation-bar .Footer .Icon-link:hover,
+#Navigation-bar .Footer .Text-link:hover {
+    color: #44c97f;
+    cursor: pointer;
+}
+
+
+
+#Navigation-bar .Footer .Icon {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+#Navigation-bar .Footer .Text-link {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 800px) {
+    #Navigation-bar.Container {
+        width: 200px;
+    }
+    @keyframes navigation-bar__entrance {
+        from {height: 0;}
+        to {height: calc(90vh - 230px);}
+    }
+
+
+
+    #Nav__Button1, #Nav__Button2, #Nav__Button3, #Nav__Button4 {
+        padding: 10px 33px 10px 33px;
+        border-radius: 10px;
+        right: 200px;
+    }
+    @keyframes nav__buttons-entrance {
+        from {right: 200px;}
+        to {right: 0;}
+    }
+    .Nav__Buttons-icon {
+        margin-right: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+
+
+    #Navigation-bar .Footer {
+        padding-bottom: 15px;
+    }
+    
+    
+    
+    #Navigation-bar .Footer div,
+    #Navigation-bar .Footer .Text-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    
+    
+    #Navigation-bar .Footer .Icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #Navigation-bar.Container {
+        justify-content: center;
+        width: 0;
+        height: 160px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    @keyframes navigation-bar__entrance {
+        from {width: 0;}
+        to {width: calc(90vw - 190px);}
+    }
+
+
+
+    #Nav__Button1, #Nav__Button2, #Nav__Button3, #Nav__Button4 {
+        margin: 0;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        right: calc(90vw - 175px);
+    }
+    @keyframes nav__buttons-entrance {
+        from {right: calc(90vw - 175px);}
+        to {right: 0;}
+    }
+    .Nav__Buttons-icon {
+        margin-right: 15px;
+        height: 15px;
+        width: 15px;
+    }
+
+
+
+    #Navigation-bar .Footer {
+        display: none;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+    #Navigation-bar.Container {
+        width: 135px;
+        height: 0;
+    }
+    @keyframes navigation-bar__entrance {
+        from {height: 0;}
+        to {height: calc(90vh - 155px);}
+    }
+
+
+
+    /* Navigation Buttons */
+    #Nav__Button1, #Nav__Button2, #Nav__Button3, #Nav__Button4 {
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        right: 190px;
+    }
+    @keyframes nav__buttons-entrance {
+        from {right: 135px;}
+        to {right: 0;}
+    }
+    .Nav__Buttons-icon {
+        margin-right: 10px;
+        height: 10px;
+        width: 10px;
+    }
+
+
+
+    /* Navigation Footer */
+    #Navigation-bar .Footer {
+        padding-bottom: 10px;
+    }
+
+
+
+    #Navigation-bar .Footer div,
+    #Navigation-bar .Footer .Text-link {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+    #Navigation-bar .Footer .Icon {
+        height: 15px;
+        width: 15px;
+    }
+}

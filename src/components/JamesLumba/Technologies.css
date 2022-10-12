@@ -1,0 +1,85 @@
+@keyframes technologies-entrance {
+    from {scale: 1.5;}
+    to {scale: 1;}
+}
+#Technologies.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1c22;
+    scale: 1.5;
+    animation-name: technologies-entrance;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+#Technologies section {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+#Technologies .Logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+
+#Html5 {
+    color: #e54c21;
+}
+#Css3 {
+    color: #214ce5;
+}
+#Javascript {
+    color: #f0db4f;
+}
+#Mongodb {
+    color: #f0db4f
+}
+#Express {
+    color: #4b5760;
+}
+#React {
+    color: #61dbfb;
+}
+#Vue {
+    color: #3fb984;
+}
+#Node {
+    color: #68a064;
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 800px) {
+    #Technologies .Logo {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    #Technologies figure {
+        margin: 16px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+    #Technologies figure {
+        margin: 5px 16px;
+    }
+}

@@ -1,0 +1,634 @@
+#Journey.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1c22;
+    scale: 1.5;
+    animation-name: improve-journey-entrance;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes improve-journey-entrance {
+    from {scale: 1.5;}
+    to {scale: 1;}
+}
+
+
+/* Creations container */
+#Journey .Creations {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#Journey .Creations.Creation1__active {
+    animation-name: creation1-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation1-entrance {
+    from {padding-top: 0; padding-left: 0;}
+    to {padding-top: 700px; padding-left: 500px;}
+}
+#Journey .Creations.Creation2__active {
+    animation-name: creation2-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation2-entrance {
+    from {padding-top: 0; padding-right: 0;}
+    to {padding-top: 700px; padding-right: 500px;}
+}
+#Journey .Creations.Creation3__active {
+    animation-name: creation3-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation3-entrance {
+    from {padding-bottom: 0; padding-left: 0;}
+    to {padding-bottom: 700px; padding-left: 500px;}
+}
+#Journey .Creations.Creation4__active {
+    animation-name: creation4-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation4-entrance {
+    from {padding-bottom: 0; padding-right: 0;}
+    to {padding-bottom: 700px; padding-right: 500px;}
+}
+
+#Journey .Creations.Creation1__deactive {
+    animation-name: creation1-exit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation1-exit {
+    from {padding-top: 700px; padding-left: 500px;}
+    to {padding-top: 0; padding-left: 0;}
+}
+#Journey .Creations.Creation2__deactive {
+    animation-name: creation2-exit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation2-exit {
+    from {padding-top: 700px; padding-right: 500px;}
+    to {padding-top: 0; padding-right: 0;}
+}
+#Journey .Creations.Creation3__deactive {
+    animation-name: creation3-exit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation3-exit {
+    from {padding-bottom: 700px; padding-left: 500px;}
+    to {padding-bottom: 0; padding-left: 0;}
+}
+#Journey .Creations.Creation4__deactive {
+    animation-name: creation4-exit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes creation4-exit {
+    from {padding-bottom: 700px; padding-right: 500px;}
+    to {padding-bottom: 0; padding-right: 0;}
+}
+
+
+
+/* Creation buttons container */
+#Journey .Creations .Creations__row {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+
+/* Creation buttons */
+#Journey .Creation__button {
+    display: inline-flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    color: #fdfcfd;
+    background-color: #404145;
+    border-style: solid;
+    border-color: #696b6f;
+    z-index: 1;
+}
+#Journey .Creation__button:hover {
+    cursor: pointer;
+    border-color: #44c97f;
+}
+
+#Journey #Creation1__button {
+    align-items: flex-end;
+    justify-content: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 150px 10px 10px 10px;
+    -webkit-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.75);
+}
+#Journey .Creation1__active #Creation1__button {
+    color: #44c97f;
+    background-color: #182626;
+}
+#Journey #Creation2__button {
+    align-items: flex-end;
+    justify-content: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px 150px 10px 10px;
+    -webkit-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.75);
+}
+#Journey .Creation2__active #Creation2__button {
+    color: #44c97f;
+    background-color: #182626;
+}
+#Journey #Creation3__button {
+    align-items: flex-start;
+    justify-content: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    border-radius: 10px 10px 10px 150px;
+    -webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+#Journey .Creation3__active #Creation3__button {
+    color: #44c97f;
+    background-color: #182626;
+}
+#Journey #Creation4__button {
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 10px 10px 150px 10px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+#Journey .Creation4__active #Creation4__button {
+    color: #44c97f;
+    background-color: #182626;
+}
+
+
+
+/* Creations */
+#Journey .Creation {
+    width: 370px;
+    height: 570px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #515259;
+    color: #fdfcfd;
+    z-index: 0;
+    animation-name: creation-entrance;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+@keyframes creation-entrance {
+    0% {scale: 0;}
+    30% {scale: 0;}
+    100% {scale: 1;}
+}
+#Journey .Creation-exit {
+    animation-name: creation-exit;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+@keyframes creation-exit {
+    0% {scale: 1;}
+    50% {scale: 0;}
+    100% {scale: 0;}
+}
+#Journey #Creation1 {
+    top: 160px;
+    left: 160px;
+}
+#Journey #Creation2 {
+    top: 160px;
+    right: 160px;
+}
+#Journey #Creation3 {
+    bottom: 160px;
+    left: 160px;
+}
+#Journey #Creation4 {
+    bottom: 160px;
+    right: 160px;
+}
+
+
+
+/* Creation contents */
+#Journey .Creation h3 {
+    margin: 0;
+    margin-bottom: -5px;
+    padding: 30px 0 0 30px;
+    letter-spacing: 5px;
+    color: #7d7d85;
+}
+
+#Journey .Creation p {
+    margin: 0;
+    padding: 0;
+    color: #faf9fb;
+}
+
+#Journey .Creation .Technology-used {
+    background-color: #595a61;
+    padding: 10px;
+    margin: 0 2px;
+    border-radius: 10px;
+}
+
+#Journey .Creation .Result-arrow,
+#Journey .Creation .Result-arrow::before,
+#Journey .Creation .Result-arrow::after {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: #7d7d85;
+}
+#Journey .Creation .Result-arrow {
+    transform: rotate(45deg);
+    animation-name: result-arrow-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes result-arrow-animation {
+    0% {border-color: #7d7d85;}
+    1% {border-color: #44c97f;}
+    31% {border-color: #44c97f;}
+    32% {border-color: #7d7d85;}
+    100% {border-color: #7d7d85;}
+}
+#Journey .Creation .Result-arrow::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    animation-name: result-arrow-animation-before;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes result-arrow-animation-before {
+    0% {border-color: #7d7d85;}
+    33% {border-color: #7d7d85;}
+    34% {border-color: #44c97f;}
+    64% {border-color: #44c97f;}
+    65% {border-color: #7d7d85;}
+    100% {border-color: #7d7d85;}
+}
+#Journey .Creation .Result-arrow::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    animation-name: result-arrow-animation-after;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes result-arrow-animation-after {
+    0% {border-color: #7d7d85;}
+    67% {border-color: #7d7d85;}
+    68% {border-color: #44c97f;}
+    98% {border-color: #44c97f;}
+    99% {border-color: #7d7d85;}
+    100% {border-color: #7d7d85;}
+}
+#Journey .Creation .Result-arrow:hover,
+#Journey .Creation .Result-arrow:hover::before,
+#Journey .Creation .Result-arrow:hover::after {
+    border-color: #44c97f !important;
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 800px) {
+    /* Creations container */
+    @keyframes creation1-entrance {
+        from {padding-top: 0; padding-left: 0;}
+        to {padding-top: 550px; padding-left: 370px;}
+    }
+    @keyframes creation2-entrance {
+        from {padding-top: 0; padding-right: 0;}
+        to {padding-top: 550px; padding-right: 370px;}
+    }
+    @keyframes creation3-entrance {
+        from {padding-bottom: 0; padding-left: 0;}
+        to {padding-bottom: 550px; padding-left: 370px;}
+    }
+    @keyframes creation4-entrance {
+        from {padding-bottom: 0; padding-right: 0;}
+        to {padding-bottom: 550px; padding-right: 370px;}
+    }
+
+    @keyframes creation1-exit {
+        from {padding-top: 550px; padding-left: 370px;}
+        to {padding-top: 0; padding-left: 0;}
+    }
+    @keyframes creation2-exit {
+        from {padding-top: 550px; padding-right: 370px;}
+        to {padding-top: 0; padding-right: 0;}
+    }
+    @keyframes creation3-exit {
+        from {padding-bottom: 550px; padding-left: 370px;}
+        to {padding-bottom: 0; padding-left: 0;}
+    }
+    @keyframes creation4-exit {
+        from {padding-bottom: 550px; padding-right: 370px;}
+        to {padding-bottom: 0; padding-right: 0;}
+    }
+
+
+
+    /* Creation buttons */
+    #Journey .Creation__button {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Journey #Creation1__button {
+        padding-right: 20px;
+        padding-bottom: 20px;
+        border-radius: 100px 10px 10px 10px;
+    }
+    #Journey #Creation2__button {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px 100px 10px 10px;
+    }
+    #Journey #Creation3__button {
+        padding-right: 20px;
+        padding-top: 20px;
+        border-radius: 10px 10px 10px 100px;
+    }
+    #Journey #Creation4__button {
+        padding-left: 20px;
+        padding-top: 20px;
+        border-radius: 10px 10px 100px 10px;
+    }
+
+
+
+    /* Creations */
+    #Journey .Creation {
+        width: 280px;
+        height: 400px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #Journey #Creation1 {
+        top: 160px;
+        left: 110px;
+    }
+    #Journey #Creation2 {
+        top: 160px;
+        right: 110px;
+    }
+    #Journey #Creation3 {
+        bottom: 160px;
+        left: 110px;
+    }
+    #Journey #Creation4 {
+        bottom: 160px;
+        right: 110px;
+    }
+
+
+
+    /* Creation contents */
+    #Journey .Creation h3 {
+        margin-bottom: -3px;
+        padding: 20px 0 0 20px;
+        letter-spacing: 3px;
+    }
+
+    #Journey .Creation .Technology-used {
+        background-color: #595a61;
+        padding: 8px;
+        margin: 0 2px;
+        border-radius: 5px;
+    }
+
+    #Journey .Creation .Result-arrow,
+    #Journey .Creation .Result-arrow::before,
+    #Journey .Creation .Result-arrow::after {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    /* Creations container */
+    @keyframes creation1-entrance {
+        from {padding-top: 0; padding-left: 0;}
+        to {padding-top: 500px; padding-left: 340px;}
+    }
+    @keyframes creation2-entrance {
+        from {padding-top: 0; padding-right: 0;}
+        to {padding-top: 500px; padding-right: 340px;}
+    }
+    @keyframes creation3-entrance {
+        from {padding-bottom: 0; padding-left: 0;}
+        to {padding-bottom: 500px; padding-left: 340px;}
+    }
+    @keyframes creation4-entrance {
+        from {padding-bottom: 0; padding-right: 0;}
+        to {padding-bottom: 500px; padding-right: 340px;}
+    }
+
+    @keyframes creation1-exit {
+        from {padding-top: 500px; padding-left: 340px;}
+        to {padding-top: 0; padding-left: 0;}
+    }
+    @keyframes creation2-exit {
+        from {padding-top: 500px; padding-right: 340px;}
+        to {padding-top: 0; padding-right: 0;}
+    }
+    @keyframes creation3-exit {
+        from {padding-bottom: 500px; padding-left: 340px;}
+        to {padding-bottom: 0; padding-left: 0;}
+    }
+    @keyframes creation4-exit {
+        from {padding-bottom: 500px; padding-right: 340px;}
+        to {padding-bottom: 0; padding-right: 0;}
+    }
+
+
+
+    /* Creation buttons */
+    #Journey .Creation__button {
+        width: 80px;
+        height: 80px;
+    }
+
+    #Journey #Creation1__button {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 80px 10px 10px 10px;
+    }
+    #Journey #Creation2__button {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px 80px 10px 10px;
+    }
+    #Journey #Creation3__button {
+        padding-right: 10px;
+        padding-top: 10px;
+        border-radius: 10px 10px 10px 80px;
+    }
+    #Journey #Creation4__button {
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 10px 10px 80px 10px;
+    }
+
+
+
+    /* Creations */
+    #Journey .Creation {
+        width: 260px;
+        height: 350px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #Journey #Creation1 {
+        top: 160px;
+        left: 90px;
+    }
+    #Journey #Creation2 {
+        top: 160px;
+        right: 90px;
+    }
+    #Journey #Creation3 {
+        bottom: 160px;
+        left: 90px;
+    }
+    #Journey #Creation4 {
+        bottom: 160px;
+        right: 90px;
+    }
+
+
+
+    /* Creation contents */
+    #Journey .Creation .Technology-used {
+        padding: 8px 6px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+    /* Creations container */
+    @keyframes creation1-entrance {
+        from {padding-top: 0; padding-left: 0;}
+        to {padding-top: 300px; padding-left: 400px;}
+    }
+    @keyframes creation2-entrance {
+        from {padding-top: 0; padding-right: 0;}
+        to {padding-top: 300px; padding-right: 400px;}
+    }
+    @keyframes creation3-entrance {
+        from {padding-bottom: 0; padding-left: 0;}
+        to {padding-bottom: 300px; padding-left: 400px;}
+    }
+    @keyframes creation4-entrance {
+        from {padding-bottom: 0; padding-right: 0;}
+        to {padding-bottom: 300px; padding-right: 400px;}
+    }
+
+    @keyframes creation1-exit {
+        from {padding-top: 300px; padding-left: 400px;}
+        to {padding-top: 0; padding-left: 0;}
+    }
+    @keyframes creation2-exit {
+        from {padding-top: 300px; padding-right: 400px;}
+        to {padding-top: 0; padding-right: 0;}
+    }
+    @keyframes creation3-exit {
+        from {padding-bottom: 300px; padding-left: 400px;}
+        to {padding-bottom: 0; padding-left: 0;}
+    }
+    @keyframes creation4-exit {
+        from {padding-bottom: 300px; padding-right: 400px;}
+        to {padding-bottom: 0; padding-right: 0;}
+    }
+
+
+
+    /* Creation buttons */
+    #Journey .Creation__button {
+        width: 70px;
+        height: 70px;
+    }
+
+    #Journey #Creation1__button {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 70px 10px 10px 10px;
+    }
+    #Journey #Creation2__button {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px 70px 10px 10px;
+    }
+    #Journey #Creation3__button {
+        padding-right: 10px;
+        padding-top: 10px;
+        border-radius: 10px 10px 10px 70px;
+    }
+    #Journey #Creation4__button {
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 10px 10px 70px 10px;
+    }
+
+
+
+    /* Creations */
+    #Journey .Creation {
+        width: 300px;
+        height: 250px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #Journey #Creation1 {
+        top: 70px;
+        left: 90px;
+    }
+    #Journey #Creation2 {
+        top: 70px;
+        right: 90px;
+    }
+    #Journey #Creation3 {
+        bottom: 70px;
+        left: 90px;
+    }
+    #Journey #Creation4 {
+        bottom: 70px;
+        right: 90px;
+    }
+}

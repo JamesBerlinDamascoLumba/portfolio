@@ -1,0 +1,156 @@
+#Wallpaper.Container {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+@keyframes wallpaper-animation {
+    from {scale: 1.25;}
+    to {scale: 1;}
+}
+@keyframes wallpaper__infinite-animation {
+    50% {scale: 1.25;}
+    100% {scale: 1;}
+}
+#Wallpaper .Main {
+    background-color: #23232e;
+    height: 100vw;
+    width: 100vw;
+    animation-name: wallpaper-animation, wallpaper__infinite-animation;
+    animation-duration: 0.5s, 50s;
+    animation-timing-function: linear, ease-in-out;
+    animation-delay: 0, 0.5s;
+    animation-iteration-count: 1, infinite;
+}
+
+
+
+#Wallpaper .Main .Section-1 {
+    background-image: linear-gradient(to top left, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 58.5vw;
+    width: 26vw;
+    position: absolute;
+    top: 6vw;
+    left: 6vw;
+    border-radius: 4vw;
+}
+#Wallpaper .Main .Section-2 {
+    background-image: linear-gradient(to top right, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 40vw;
+    width: 35vw;
+    position: absolute;
+    top: 6vw;
+    left: 36.5vw;
+    border-radius: 4vw;
+}
+#Wallpaper .Main .Section-3 {
+    background-image: linear-gradient(to bottom left, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 46vw;
+    width: 18vw;
+    position: absolute;
+    left: 76vw;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+}
+#Wallpaper .Main .Section-4 {
+    background-image: linear-gradient(to bottom left, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 31vw;
+    width: 32vw;
+    position: absolute;
+    top: 69vw;
+    border-top-right-radius: 4vw;
+}
+#Wallpaper .Main .Section-5 {
+    background-image: linear-gradient(to top right, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 32vw;
+    width: 63.5vw;
+    position: absolute;
+    top: 50.5vw;
+    left: 36.5vw;
+    border-top-left-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+}
+#Wallpaper .Main .Section-6 {
+    background-image: linear-gradient(to top, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 13vw;
+    width: 10vw;
+    position: absolute;
+    top: 87vw;
+    left: 36.5vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+}
+#Wallpaper .Main .Section-7 {
+    background-image: linear-gradient(to bottom left, #23232e 0%, #23232e 30%, #363742 100%);
+    height: 13vw;
+    width: 48.5vw;
+    position: absolute;
+    top: 87vw;
+    left: 51.5vw;
+    border-top-left-radius: 4vw;
+}
+
+
+
+@media screen and (orientation: portrait) {
+    #Wallpaper .Main {
+        height: 100vh;
+        width: 100vh;
+    }
+    
+    
+    
+    #Wallpaper .Main .Section-1 {
+        height: 58.5vh;
+        width: 26vh;
+        top: 6vh;
+        left: 6vh;
+        border-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-2 {
+        height: 40vh;
+        width: 35vh;
+        top: 6vh;
+        left: 36.5vh;
+        border-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-3 {
+        height: 46vh;
+        width: 18vh;
+        left: 76vh;
+        border-bottom-left-radius: 4vh;
+        border-bottom-right-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-4 {
+        height: 31vh;
+        width: 32vh;
+        top: 69vh;
+        border-top-right-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-5 {
+        height: 32vh;
+        width: 63.5vh;
+        top: 50.5vh;
+        left: 36.5vh;
+        border-top-left-radius: 4vh;
+        border-bottom-left-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-6 {
+        height: 13vh;
+        width: 10vh;
+        top: 87vh;
+        left: 36.5vh;
+        border-top-left-radius: 4vh;
+        border-top-right-radius: 4vh;
+    }
+    #Wallpaper .Main .Section-7 {
+        height: 13vh;
+        width: 48.5vh;
+        top: 87vh;
+        left: 51.5vh;
+        border-top-left-radius: 4vh;
+    }
+}

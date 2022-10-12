@@ -1,0 +1,141 @@
+#Identification.Container {
+    width: 250px;
+    height: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+#Identification svg {
+    display: none;
+    height: 75px;
+    width: 125px;
+    position: absolute;
+    top: 10px;
+    left: 140px;
+    z-index: 10;
+}
+#Identification .Thought-bubble__Soon {
+    display: inline;
+}
+
+
+
+#Identification img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+#Identification h4 {
+    color: #faf9fb;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+#Identification p {
+    color: #7d7d85;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 800px) {
+    #Identification.Container {
+        width: 200px;
+        height: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+    #Identification svg {
+        scale: 0.8;
+        transform: translate(-60px, -30px);
+    }
+
+
+
+    #Identification img {
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    #Identification h4 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #Identification.Container {
+        width: 160px;
+        height: 160px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+    #Identification svg {
+        scale: 0.7;
+        transform: translate(-100px, -40px);
+    }
+
+
+
+    #Identification img {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+    #Identification.Container {
+        width: 135px;
+        height: 135px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+
+
+    #Identification svg {
+        scale: 0.7;
+        transform: translate(-120px, -50px);
+    }
+
+
+
+    #Identification img {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

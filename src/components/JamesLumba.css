@@ -1,0 +1,176 @@
+#James-lumba.Container {
+    background-color: #13131b;
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    animation-name: james-lumba-container-entrance;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+@keyframes james-lumba-container-entrance {
+    from {transform: scale(0, 0);}
+    to {transform: scale(1, 1);}
+}
+
+
+
+/* Left Body */
+#Left-body.Container {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+#Main-body.Container {
+    height: 90vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: body-container-entrance;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes body-container-entrance {
+    from {width: 0;}
+    to {width: calc(90vw - 300px);}
+}
+
+
+
+#Main-body .Window {
+    width: 0;
+    height: 0;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#Main-body .Window___open {
+    animation-name: window-entrance;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes window-entrance {
+    from {width: 0; height: 0;}
+    to {width: 98%; height: 98%;}
+}
+
+#Main-body .Window___close {
+    animation-name: window-exit;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes window-exit {
+    from {width: 98%; height: 98%;}
+    to {width: 0; height: 0;}
+}
+
+
+
+@media screen and (max-width: 1000px), screen and (max-height: 800px) {
+    #James-lumba.Container {
+        border-radius: 25px;
+    }
+
+
+
+    #Left-body.Container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+    @keyframes body-container-entrance {
+        from {width: 0;}
+        to {width: calc(90vw - 230px);}
+    }
+
+
+
+    #Main-body .Window {
+        border-radius: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #James-lumba.Container {
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+
+
+    #Left-body.Container {
+        flex-direction: row;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+    #Main-body.Container {
+        width: 90vw;
+    }
+    @keyframes body-container-entrance {
+        from {height: 0;}
+        to {height: calc(90vh - 190px);}
+    }
+    
+    
+    
+    #Main-body .Window {
+        border-radius: 20px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
+    #James-lumba.Container {
+        border-radius: 20px;
+    }
+
+
+
+    /* Left Body */
+    #Left-body.Container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+    #Main-body.Container {
+        height: 90vh;
+        /* display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation-name: body-container-entrance;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; */
+    }
+    @keyframes body-container-entrance {
+        from {width: 0;}
+        to {width: calc(90vw - 155px);}
+    }
+    
+    
+    
+    #Main-body .Window {
+        /* width: 0;
+        height: 0; */
+        border-radius: 20px;
+    }
+}
